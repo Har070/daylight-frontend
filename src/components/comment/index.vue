@@ -1,0 +1,23 @@
+<template>
+    <section id="comment" class="pt-pb-50" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <content />
+    </section>
+</template>
+
+<script>
+import Content from '@/components/comment/content/index';
+
+export default {
+    name: "index",
+    components: {
+        Content,
+    },
+}
+</script>
+
+<style scoped>
+.pt-pb-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+</style>
