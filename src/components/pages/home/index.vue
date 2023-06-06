@@ -1,5 +1,6 @@
 <template>
     <div>
+        <app-banner :title="title" :subTitle="subTitle" :image="image"/>
         <welcome />
         <about />
         <service-slider />
@@ -23,6 +24,13 @@ export default {
         Welcome,
         Comment,
         ServiceSlider,
+    },
+    data() {
+        return {
+            subTitle: 'The Pharmacy You Trust',
+            title: 'Welcome To Daylight Pharmacy',
+            image: require("@/assets/images/welcome/welcome-banner.jpg")
+        }
     },
 }
 </script>

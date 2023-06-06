@@ -22,7 +22,7 @@ export default {
             {
                 user: {
                     name: 'Henry M.',
-                    image: require("@/assets/images/welcome/delivery.jpg"),
+                    image: require("@/assets/images/avatar/avatar.png"),
                 },
                 created_at: 'Feb 2020',
                 text: '“They provide the best customer service to their patients and treat them like family. They make every transaction smooth and easy and not to mention but they also know what they are talking about. Very professional staff and I wouldn’t go anywhere else. I highly recommend Daylight Pharmacy to everyone.”',
@@ -30,7 +30,7 @@ export default {
             {
                 user: {
                     name: 'Anya T.',
-                    image: require("@/assets/images/welcome/delivery.jpg"),
+                    image: require("@/assets/images/avatar/avatar.png"),
                 },
                 created_at: 'Jan 2020',
                 text: '“The team is great and they fill your prescription promptly. They have been supporting this area of Burbank successfully for years. With convenient parking and prompt service. Highly recommend Daylight Pharmacy to everyone.”',
@@ -39,7 +39,7 @@ export default {
             {
                 user: {
                     name: 'Mery A.',
-                    image: require("@/assets/images/welcome/delivery.jpg"),
+                    image: require("@/assets/images/avatar/avatar.png"),
                 },
                 created_at: 'Jan 2020',
                 text: '“I\'ve been coming to this pharmacy for almost the past five years, and they are always so gracious. It\'s so much nicer than going to a big chain pharmacy.”',

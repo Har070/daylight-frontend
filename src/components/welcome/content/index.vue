@@ -1,7 +1,11 @@
 <template>
     <div class="container">
-        <div class="text-center color-orange-red"><span>Happy to serve</span></div>
-        <h1 class="text-center color-gray">The right pharmacy is right here</h1>
+        <div class="text-center color-orange-red">
+            <span class="mt-3">Happy to serve</span>
+        </div>
+        <h1 class="text-center color-gray">
+            The right pharmacy is right here
+        </h1>
         <ui-carousel class="mt-3" :component="'welcome-card'" :wrap="true" :show="3" :data="services"/>
     </div>
 </template>
