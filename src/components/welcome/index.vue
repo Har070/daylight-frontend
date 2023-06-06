@@ -1,8 +1,6 @@
 <template>
     <section id="welcome" class="background-gray">
-        <content data-aos="flip-down"
-                 data-aos-easing="linear"
-                 data-aos-duration="500"/>
+        <content data-aos="flip-down" data-aos-easing="linear" data-aos-duration="500"/>
     </section>
 </template>
 
