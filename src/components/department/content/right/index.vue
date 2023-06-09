@@ -55,4 +55,15 @@ export default {
     line-height: 1.8;
     color: #666666;
 }
+
+@media screen and (max-width: 992px) {
+    .content-title {
+        text-align: center !important;
+        margin-top: 10px !important;
+    }
+
+    .content-title h2 {
+        font-size: 20px !important;
+    }
+}
 </style>

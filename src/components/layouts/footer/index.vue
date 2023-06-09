@@ -1,6 +1,5 @@
 <template>
-    <footer
-        class="text-center text-lg-start text-white footer-bg-color">
+    <footer class="text-white light-gray">
         <div class="container p-4 pb-0">
             <div class="row">
                 <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
@@ -20,20 +19,20 @@
                     <p><i class="fas fa-home mr-3 text-nowrap"></i> 14841 Burbank Blvd, Sherman Oaks, CA 91411</p>
                 </div>
                 <div class="col-md-4 col-lg-4 col-xl-3 mt-3">
-                    <h5 class="text-uppercase mb-4">Opening hours</h5>
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Opening hours</h6>
                     <table class="table">
                         <tbody>
                         <tr>
-                            <td class="footer-bg-color text-white">Mon - Thu :</td>
-                            <td class="footer-bg-color text-white">8am - 9pm</td>
+                            <td class="light-gray text-white">Mon - Thu :</td>
+                            <td class="light-gray text-white">8am - 9pm</td>
                         </tr>
                         <tr>
-                            <td class="footer-bg-color text-white">Fri - Sat :</td>
-                            <td class="footer-bg-color text-white">8am - 1am</td>
+                            <td class="light-gray text-white">Fri - Sat :</td>
+                            <td class="light-gray text-white">8am - 1am</td>
                         </tr>
                         <tr>
-                            <td class="footer-bg-color text-white">Sunday :</td>
-                            <td class="footer-bg-color text-white">9am - 10pm</td>
+                            <td class="light-gray text-white">Sunday :</td>
+                            <td class="light-gray text-white">9am - 10pm</td>
                         </tr>
                         </tbody>
                     </table>
@@ -59,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center footer-bg-color-dark p-3">
+        <div class="text-center dark-gray p-3">
             © 2023 Daylight Pharmacy. All Rights Reserved
         </div>
     </footer>
@@ -72,11 +71,30 @@ export default {
 </script>
 
 <style scoped>
-.footer-bg-color {
+.light-gray {
     background-color: #484848;
 }
 
-.footer-bg-color-dark {
+.dark-gray {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 992px) {
+    .p-4 {
+        padding: 0.5rem !important;
+    }
+
+    .mb-4 {
+        margin-bottom: 1em !important;
+    }
+
+    .row div {
+        text-align: start !important;
+    }
+
+    .row div h6 {
+        font-weight: bold;
+        font-size: 20px !important;
+    }
 }
 </style>

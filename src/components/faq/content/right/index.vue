@@ -330,4 +330,15 @@ export default {
     border-top: none;
     padding: 0 20px 20px;
 }
+
+@media screen and (max-width: 992px) {
+    .content-title {
+        text-align: center !important;
+        margin-top: 10px !important;
+    }
+
+    .content-title h2 {
+        font-size: 20px !important;
+    }
+}
 </style>

@@ -3,7 +3,7 @@
              v-bind:style="{ 'background-image': 'url(' + image + ')' }">
         <div class="banner-content">
             <div class="row w-100">
-                <div class="content col-5 text-white" data-aos="fade-right">
+                <div class="content col-md text-white" data-aos="fade-right">
                     <span class="color-orange-red">{{ title }}</span>
                     <h1>{{ subTitle }}</h1>
                     <p v-if="description">{{ description }}</p>
@@ -66,5 +66,28 @@ export default {
 
 .color-orange-red {
     color: orangered;
+}
+
+@media screen and (max-width: 992px) {
+    .banner {
+        height: 400px !important;
+    }
+
+    .content span {
+        font-size: 20px !important;
+    }
+
+    .content h1 {
+        font-size: 40px !important;
+    }
+
+    .content p {
+        display: none !important;
+    }
+
+    .pt-pb-50 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
 }
 </style>

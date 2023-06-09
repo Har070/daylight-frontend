@@ -27,4 +27,11 @@ export default {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+@media screen and (max-width: 992px) {
+    .pt-pb-50 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
 </style>

@@ -98,4 +98,14 @@ export default {
     line-height: 34px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 992px) {
+    .content-title {
+        text-align: center !important;
+    }
+
+    .content-title h2 {
+        font-size: 20px !important;
+    }
+}
 </style>

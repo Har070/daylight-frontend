@@ -1,18 +1,13 @@
 <template>
-    <header class="navbar-color">
+    <header class="header-dark">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <div class="color-style">
-                    <a role="button" @click="$router.push('/')">
-                       <span>
-                           <strong>
-                               Daylight Pharmacy
-                           </strong>
-                       </span>
-                    </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-pages" aria-controls="navbar-pages" aria-expanded="false" aria-label="Toggle navigation">
-                    <span><i class="fas fa-bars fa-1x"></i></span>
+                <router-link class="nav-link color-style" aria-current="page" :to="{ name: 'home' }">
+                    <span><strong>Daylight Pharmacy</strong></span>
+                </router-link>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-pages"
+                        aria-controls="navbar-pages" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="color-style"><i class="fas fa-bars fa-1x"></i></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-pages">
                     <div>
@@ -24,7 +19,8 @@
                                 </router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link class="nav-link color-style" :class="$route.name === 'services' ? 'active':''"
+                                <router-link class="nav-link color-style"
+                                             :class="$route.name === 'services' ? 'active':''"
                                              aria-current="page" :to="{ name: 'services' }">
                                     Services
                                 </router-link>
@@ -72,7 +68,7 @@ export default {
 </script>
 
 <style scoped>
-.navbar-color {
+.header-dark {
     background-color: #484848;
 }
 
