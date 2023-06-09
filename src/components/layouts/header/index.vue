@@ -1,48 +1,44 @@
 <template>
-    <header class="navbar-color fixed-top">
-        <div class="container">
-            <div class="header-bottom">
-                <nav class="navbar navbar-expand-lg navbar-light header-sticky">
-                    <div class="color-style">
-                        <a role="button" @click="$router.push('/')">
-                            <span>
-                                <strong>
-                                    Daylight Pharmacy
-                                </strong>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="collapse navbar-collapse justify-content-end">
-                        <ul class="navbar-nav">
+    <header class="navbar-color">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="color-style">
+                    <a role="button" @click="$router.push('/')">
+                       <span>
+                           <strong>
+                               Daylight Pharmacy
+                           </strong>
+                       </span>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-pages" aria-controls="navbar-pages" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars fa-1x"></i></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-pages">
+                    <div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link color-style" role="button" @click="$router.push('/')">
+                                <router-link class="nav-link color-style" :class="$route.name === 'home' ? 'active':''"
+                                             aria-current="page" :to="{ name: 'home' }">
                                     Home
-                                </a>
+                                </router-link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link color-style" role="button" @click="$router.push('/services')">
+                                <router-link class="nav-link color-style" :class="$route.name === 'services' ? 'active':''"
+                                             aria-current="page" :to="{ name: 'services' }">
                                     Services
-                                </a>
+                                </router-link>
                             </li>
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link color-style" role="button" @click="$router.push('/blog')">-->
-<!--                                    Blog-->
-<!--                                </a>-->
-<!--                            </li>-->
                             <li class="nav-item">
-                                <a class="nav-link color-style" role="button" @click="$router.push('/about')">
+                                <router-link class="nav-link color-style" :class="$route.name === 'about' ? 'active':''"
+                                             aria-current="page" :to="{ name: 'about' }">
                                     About
-                                </a>
+                                </router-link>
                             </li>
-<!--                            <li class="nav-item">-->
-<!--                                <a class="nav-link color-style" role="button" @click="$router.push('/contact')">-->
-<!--                                    Contact-->
-<!--                                </a>-->
-<!--                            </li>-->
                         </ul>
                     </div>
                     <div class="d-flex justify-content-end social-part">
-                        <div class="social-icon">
+                        <div>
                             <a class="color-style" target="_blank" href="https://www.facebook.com/">
                                 <i class="fab fa-facebook"></i>
                             </a>
@@ -63,9 +59,9 @@
                             </a>
                         </div>
                     </div>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 </template>
 
@@ -95,4 +91,19 @@ export default {
 .color-style:hover {
     color: orangered;
 }
-</style>
+
+.active {
+    color: orangered !important;
+}
+
+@media screen and (max-width: 992px) {
+    .social-part {
+        margin-left: 0 !important;
+        justify-content: start !important;
+    }
+
+    .social-icon {
+        margin-left: 10px !important;
+    }
+}
+</style>v

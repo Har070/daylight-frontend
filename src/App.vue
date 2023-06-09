@@ -1,7 +1,7 @@
 <template>
-    <div class="app">
+    <div>
         <app-header/>
-        <router-view class="overflow-hidden mt-5"/>
+        <router-view class="overflow-hidden"/>
         <app-footer/>
     </div>
 </template>
