@@ -1,11 +1,11 @@
 <template>
     <div>
         <app-banner :title="title" :subTitle="subTitle" :image="image"/>
-        <welcome />
-        <about />
-        <service-slider />
-        <faq />
-        <comment />
+        <welcome/>
+        <about/>
+        <service-slider/>
+        <faq/>
+        <comment/>
     </div>
 </template>
 
@@ -25,12 +25,10 @@ export default {
         Comment,
         ServiceSlider,
     },
-    data() {
-        return {
-            subTitle: 'The Pharmacy You Trust',
-            title: 'Welcome To Daylight Pharmacy',
-            image: require("@/assets/images/welcome/welcome-banner.jpg")
-        }
-    },
+    data: () => ({
+        subTitle: 'The Pharmacy You Trust',
+        title: 'Welcome To Daylight Pharmacy',
+        image: require("@/assets/images/welcome/welcome-banner.jpg"),
+    }),
 }
 </script>

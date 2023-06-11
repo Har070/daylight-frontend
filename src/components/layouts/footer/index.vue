@@ -1,5 +1,5 @@
 <template>
-    <footer class="text-white light-gray">
+    <footer class="text-white light-blue">
         <div class="container p-4 pb-0">
             <div class="row">
                 <div class="col-md-3 col-lg-3 col-xl-3 mt-3">
@@ -11,31 +11,31 @@
                         optimal medication outcomes.
                     </p>
                 </div>
+                <div class="col-md-4 col-lg-4 col-xl-3 mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Opening hours</h6>
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td class="light-blue text-white">Mon - Fri :</td>
+                            <td class="light-blue text-white">10am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td class="light-blue text-white">Sat :</td>
+                            <td class="light-blue text-white">10am - 4pm</td>
+                        </tr>
+                        <tr>
+                            <td class="light-blue text-white">Sunday :</td>
+                            <td class="light-blue text-white">Closed</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <div class="col-md-2 col-lg-2 col-xl-4 mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                     <p><i class="fas fa-print mr-3"></i> 818.616.2700</p>
                     <p><i class="fas fa-phone mr-3"></i> 818.600.0700</p>
                     <p><i class="fas fa-envelope mr-3"></i> daylightfarmacyinc@gmail.com</p>
                     <p><i class="fas fa-home mr-3 text-nowrap"></i> 14841 Burbank Blvd, Sherman Oaks, CA 91411</p>
-                </div>
-                <div class="col-md-4 col-lg-4 col-xl-3 mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Opening hours</h6>
-                    <table class="table">
-                        <tbody>
-                        <tr>
-                            <td class="light-gray text-white">Mon - Thu :</td>
-                            <td class="light-gray text-white">8am - 9pm</td>
-                        </tr>
-                        <tr>
-                            <td class="light-gray text-white">Fri - Sat :</td>
-                            <td class="light-gray text-white">8am - 1am</td>
-                        </tr>
-                        <tr>
-                            <td class="light-gray text-white">Sunday :</td>
-                            <td class="light-gray text-white">9am - 10pm</td>
-                        </tr>
-                        </tbody>
-                    </table>
                 </div>
                 <div class="col-md-3 col-lg-3 col-xl-2 mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
@@ -58,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center dark-gray p-3">
+        <div class="text-center dark-blue p-3">
             © 2023 Daylight Pharmacy. All Rights Reserved
         </div>
     </footer>
@@ -71,12 +71,16 @@ export default {
 </script>
 
 <style scoped>
-.light-gray {
-    background-color: #484848;
+.light-blue{
+    background-color: #020058;
 }
 
-.dark-gray {
+.dark-blue {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+h6 {
+    color: orangered;
 }
 
 @media screen and (max-width: 992px) {

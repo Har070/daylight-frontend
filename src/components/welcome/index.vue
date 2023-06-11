@@ -1,6 +1,6 @@
 <template>
-    <section id="welcome" class="background-gray">
-        <content data-aos="flip-down" data-aos-easing="linear" data-aos-duration="500"/>
+    <section id="welcome">
+        <content data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"/>
     </section>
 </template>
 
@@ -14,9 +14,3 @@ export default {
     },
 }
 </script>
-
-<style scoped>
-.background-gray {
-    background: #f9f9f9;
-}
-</style>

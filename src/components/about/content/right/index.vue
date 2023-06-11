@@ -44,7 +44,7 @@ export default {
     position: absolute;
     min-width: 220px;
     padding: 20px 10px 30px;
-    background-color: #484848;
+    background-color: #020058;
     text-align: center;
     bottom: 60px;
     right: 0;

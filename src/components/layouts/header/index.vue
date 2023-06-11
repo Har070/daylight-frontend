@@ -69,7 +69,7 @@ export default {
 
 <style scoped>
 .header-dark {
-    background-color: #484848;
+    background-color: #020058;
 }
 
 .social-part {

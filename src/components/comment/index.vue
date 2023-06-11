@@ -1,6 +1,6 @@
 <template>
-    <section id="comment" class="pt-pb-50" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-        <content />
+    <section id="comment" class="pt-pb-50">
+        <content data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500"/>
     </section>
 </template>
 

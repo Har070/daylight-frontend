@@ -45,7 +45,7 @@ export default {
     font-size: 44px;
     line-height: 1.3;
     margin: 0;
-    color: #484848;
+    color: #020058;
     font-family: "Roboto Condensed", sans-serif;
 }
 

@@ -1,30 +1,27 @@
 <template>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="image-flip">
-            <div class="mainflip flip-0">
-                <div class="frontside">
-                    <div class="card">
-                        <div class="card-img">
-                            <img class=" img-fluid"
-                                 :src="data.image"
-                                 alt="Service Image">
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                {{ data.title }}
-                            </h4>
-                        </div>
+    <div class="image-flip">
+        <div class="mainflip flip-0">
+            <div class="frontside">
+                <div class="card">
+                    <div class="card-img">
+                        <i :class="data.image" style="color: #020058;"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            {{ data.title }}
+                        </h4>
                     </div>
                 </div>
-                <div class="backside">
-                    <div class="card">
-                        <div class="card-body text-center mt-4">
-                            <h4 class="card-title">
-                                {{ data.name }}
-                            </h4>
-                            <p class="card-text">
-                                {{ data.description }}
-                            </p>
+            </div>
+            <div class="backside">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">
+                            {{ data.title }}
+                        </h4>
+                        <p class="card-text">
+                            {{ data.description }}
+                        </p>
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <a class="social-icon text-xs-center" target="_blank"
@@ -51,7 +48,6 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -61,9 +57,10 @@
 
 <script>
 export default {
-    name: "index",
+    name: "service-card",
     props: {
         data: {
+            type: Object,
             required: true,
         },
     },
@@ -73,6 +70,7 @@ export default {
 <style scoped>
 .card {
     border: none;
+    text-align: center;
     background: #ffffff;
     -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
     -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
@@ -153,15 +151,22 @@ export default {
     min-height: 312px;
 }
 
+.backside .card .card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .backside .card a {
     font-size: 18px;
-    color: #484848 !important;
+    color: #020058 !important;
 }
 
 .frontside .card .card-title,
 .backside .card .card-title {
     text-align: center;
-    color: #484848 !important;
+    color: #020058 !important;
 }
 
 .card-text {
@@ -173,7 +178,21 @@ export default {
 }
 
 .card-img img {
-    max-height: 260px !important;
+    max-height: 245px !important;
     width: -webkit-fill-available;
+    object-fit: contain;
+}
+
+.card-img {
+    width: 400px;
+    margin-top: 40px;
+}
+
+.card-img i {
+    font-size: 160px;
+}
+
+.card-body {
+    margin-top: 35px;
 }
 </style>

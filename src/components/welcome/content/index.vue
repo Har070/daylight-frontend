@@ -1,12 +1,12 @@
 <template>
-    <div class="container">
+    <div>
         <div class="text-center color-orange-red">
             <span class="mt-3">Happy to serve</span>
         </div>
-        <h1 class="text-center color-gray">
+        <h1 class="text-center color-blue">
             The right pharmacy is right here
         </h1>
-        <ui-carousel class="mt-3" :component="'welcome-card'" :wrap="true" :show="cardCount" :data="services"/>
+        <ui-carousel class="mt-3" :component="'welcome-card'" :wrap="true" :data="services"/>
     </div>
 </template>
 
@@ -14,7 +14,6 @@
 export default {
     name: "index",
     data: () => ({
-        cardCount: 3,
         services: [
             {
                 title: 'Medicine Delivery',
@@ -33,10 +32,6 @@ export default {
             },
         ],
     }),
-    mounted() {
-        if (window.innerWidth >= 280 && window.innerWidth <= 772 ) this.cardCount = 1;
-        if (window.innerWidth >= 772 && window.innerWidth <= 992 ) this.cardCount = 2;
-    },
 }
 </script>
 
@@ -45,8 +40,8 @@ export default {
     color: orangered;
 }
 
-.color-gray {
-    color: #484848;
+.color-blue {
+    color: #020058;
 }
 
 .color-orange-red span {

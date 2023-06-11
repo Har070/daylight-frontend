@@ -169,7 +169,7 @@ export default {
     font-size: 44px;
     line-height: 1.3;
     margin: 0;
-    color: #484848;
+    color: #020058;
     font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -194,12 +194,12 @@ export default {
 .accordion-item .accordion-header {
     font-weight: 700;
     line-height: 1.4;
-    color: #484848;
+    color: #020058;
     font-family: "Roboto Condensed", sans-serif;
 }
 
 .accordion-item .accordion-header .accordion-button.collapsed {
-    color: #484848;
+    color: #020058;
     border: 1px solid rgba(2, 45, 93, 0.3);
 }
 
@@ -213,7 +213,7 @@ export default {
     font-size: 20px;
     font-weight: 600;
     border-radius: 5px;
-    color: #484848;
+    color: #020058;
     text-align: left;
     align-items: center;
     padding: 15px 65px 15px 20px;
@@ -256,7 +256,7 @@ export default {
 }
 
 .accordion-item .accordion-header .accordion-button.collapsed span i {
-    color: #484848;
+    color: #020058;
 }
 
 .accordion-item .accordion-header .accordion-button:not(collapsed) span i {

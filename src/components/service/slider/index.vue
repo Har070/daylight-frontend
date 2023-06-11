@@ -1,10 +1,9 @@
 <template>
-    <section id="services-slider" class="background-gray pt-pb-30" data-aos="flip-down" data-aos-easing="linear"
-             data-aos-duration="500">
-        <div class="container">
+    <section id="services-slider" class="pt-pb-30">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <div class="text-center color-orange-red"><span>Happy to serve</span></div>
-            <h1 class="text-center color-gray">The right pharmacy is right here</h1>
-            <ui-carousel :component="'service-slider-card'" :wrap="true" :show="cardCount" :data="services"/>
+            <h1 class="text-center color-blue">The right pharmacy is right here</h1>
+            <ui-carousel class="mt-3" :component="'service-card'" :wrap="true" :data="services"/>
         </div>
     </section>
 </template>
@@ -13,38 +12,34 @@
 export default {
     name: "index",
     data: () => ({
-        cardCount: 3,
         services: [
             {
                 title: 'Prescription Refills',
-                image: require("@/assets/images/service/content/card/prescription-refills.jpg"),
+                image: 'fa-solid fa-file-prescription',
                 description: 'If you\'re looking for a trusted source for prescription refills, look no further than Daylight Pharmacy.',
             },
             {
                 title: 'Immunizations',
-                image: require("@/assets/images/service/content/card/immunization.jpg"),
+                image: 'fa-solid fa-syringe',
                 description: 'We offer shots for both children and adults, so that everyone in your family can be protected.',
             },
             {
                 title: 'Vitamins & Multivitamins',
-                image: require("@/assets/images/service/content/card/vitamins.jpg"),
+                image: 'fa-solid fa-capsules',
                 description: 'Vitamins and supplements are an essential part of keeping your body healthy and Daylight Pharmacy has all the bases covered.',
             },
             {
                 title: 'Vaccinations',
-                image: require("@/assets/images/service/content/card/vaccination.jpg"),
+                image: 'fa-solid fa-virus-covid-slash',
                 description: 'We offer a wide range of vaccinations to help protect you and your family from potentially deadly diseases.',
             },
             {
                 title: 'Medical Equipment',
-                image: require("@/assets/images/service/content/card/medical-equipment.jpg"),
+                image: 'fa-solid fa-stethoscope',
                 description: 'Daylight Pharmacy is here to provide you with top-quality medical equipment that you can trust.',
             },
         ],
     }),
-    mounted() {
-        if (window.innerWidth >= 280 && window.innerWidth <= 992 ) this.cardCount = 1;
-    },
 }
 </script>
 
@@ -54,16 +49,12 @@ export default {
     padding-bottom: 50px;
 }
 
-.background-gray {
-    background: #f9f9f9;
-}
-
 .color-orange-red {
     color: orangered;
 }
 
-.color-gray {
-    color: #484848;
+.color-blue {
+    color: #020058;
 }
 
 .color-orange-red span {

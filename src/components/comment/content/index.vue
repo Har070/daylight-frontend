@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <div class="row">
             <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
                 <div class="content-title text-center mb-30">
@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="mt-3">
-            <ui-carousel :component="'comment-card'" :wrap="true" :show="cardCount" :data="comments"/>
+            <ui-carousel :component="'comment-card'" :wrap="true" :data="comments"/>
         </div>
     </div>
 </template>
@@ -18,7 +18,6 @@
 export default {
     name: "index",
     data: () => ({
-        cardCount: 3,
         comments: [
             {
                 user: {
@@ -47,10 +46,6 @@ export default {
             },
         ],
     }),
-    mounted() {
-        if (window.innerWidth >= 280 && window.innerWidth <= 772 ) this.cardCount = 1;
-        if (window.innerWidth >= 772 && window.innerWidth <= 992 ) this.cardCount = 2;
-    }
 }
 </script>
 
@@ -77,7 +72,7 @@ export default {
     font-size: 40px;
     margin: 0;
     line-height: 1.3;
-    color: #484848;
+    color: #020058;
     font-weight: 700;
     font-family: "Roboto Condensed", sans-serif;
 }

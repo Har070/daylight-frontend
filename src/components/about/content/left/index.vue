@@ -49,7 +49,7 @@ export default {
     font-size: 44px;
     line-height: 1.3;
     margin: 0;
-    color: #484848;
+    color: #020058;
     font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -82,7 +82,7 @@ export default {
 
 .content-feature-list.style3 li {
     font-weight: 600;
-    color: #484848;
+    color: #020058;
     font-size: 18px;
     padding-left: 45px;
     margin-bottom: 25px;

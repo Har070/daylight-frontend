@@ -72,14 +72,9 @@ export default {
 .post-slide .post-title p {
     font-size: 20px;
     font-weight: bold;
-    color: #484848;
+    color: #020058;
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
-}
-
-.post-slide .post-title a:hover {
-    text-decoration: none;
-    color: #3498db;
 }
 
 .post-slide .post-description {

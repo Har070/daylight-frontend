@@ -1,7 +1,7 @@
 <template>
     <div>
         <app-banner :title="title" :subTitle="subTitle" :image="image"/>
-        <content />
+        <content/>
     </div>
 </template>
 
@@ -13,12 +13,10 @@ export default {
     components: {
         Content,
     },
-    data() {
-        return {
-            subTitle: 'The ideal pharmacy',
-            title: 'Welcome To Daylight Pharmacy Services',
-            image: require("@/assets/images/service/banner/service-banner.jpg")
-        };
-    },
+    data: () => ({
+        subTitle: 'The ideal pharmacy',
+        title: 'Welcome To Daylight Pharmacy Services',
+        image: require("@/assets/images/service/banner/service-banner.jpg")
+    }),
 }
 </script>
