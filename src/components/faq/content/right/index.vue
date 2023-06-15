@@ -87,7 +87,7 @@
                             <p class="grey-text">Daylight Pharmacy will deliver most prescription medications the same
                                 day and at NO cost
                                 for our neighborhood customers. For customers living outside the neighborhood please
-                                contact us at (818) 877-7788 for details on delivery availability. Medications which are
+                                contact us at (818) 600-0700 for details on delivery availability. Medications which are
                                 not kept in stock may take an additional day to deliver.</p>
                         </div>
                     </div>
