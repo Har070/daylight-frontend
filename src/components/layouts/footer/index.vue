@@ -21,7 +21,7 @@
                         </tr>
                         <tr>
                             <td class="light-blue text-white">Sat :</td>
-                            <td class="light-blue text-white">10am - 4pm</td>
+                            <td class="light-blue text-white">Closed</td>
                         </tr>
                         <tr>
                             <td class="light-blue text-white">Sunday :</td>
